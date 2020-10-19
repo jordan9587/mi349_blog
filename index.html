@@ -3,30 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan Hybki MI349 Blog</title>
+    <title>Blog - Jordan Hybki MI349 Blog</title>
 </head>
 <body>
     <!-- Each HTML file (index.html and about.html) should have the same header section (they are part of the same site)-->
-    <header>Jordan Hybki's Blog</header>
-    <!-- Each HTML file (index.html and about.html) should have the same navigation section (they are part of the same site)-->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-        </ul>
-    </nav>
-    <section>
+    <header>
+        <h1>Jordan Hybki's Blog</h1>
+        <!-- Each HTML file (index.html and about.html) should have the same navigation section (they are part of the same site)-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <section id = "blog">
         <h2>Blog Posts</h2>
         <!-- The index.html file should include two original blog posts (on any topic you'd like).-->
         <!-- Each blog post should be at least 200 words and contain 1 image, a title, a published date, and author-->
-        <article>
+        <article class = "blog-post">
             <!--a title-->
             <h3>Why Druid Tanking is best class for tanking in World of Warcraft: Classic?</h3>
              <!-- Describe the image within alt --> 
             <p><img src="FeralDruid.png" alt="Image of Night Elf Feral Druid walking with two other Feral Druids in bear form"></p>
-            <p>Author: <span class="author">Jordan Hybki</span></p>
+            <address class="author"><a rel = "author" href="about.html">Jordan Hybki</a></address>
+            <!--<p>Author: <span class="author">Jordan Hybki</span></p> -->
             <!-- a published date -->
             <p>Published Date: <time datetime="2020-10-10 08:00">10th of October 2020, 8:00am</time></p>
+            <!-- Create a table with tabular data in one of the two blog posts your wrote in the last lab. You table should include a header row with three additional rows of data in three columns -->
+            <h4>Best in Slot Gear:</h4>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Source</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td><a href = "https://classic.wowhead.com/item=22732/mark-of-cthun">Mark of C'Thun</a></td>
+                    <td>Dropped by C'Thun</td>
+                    <td>Raid - Ahn'Qiraj</td>
+                </tr>
+                <tr>
+                    <td><a href = "https://classic.wowhead.com/item=16550/warlords-dragonhide-helmet">Warlord's Dragonhide Helmet</a></td>
+                    <td>Get to PVP rank 13.</td>
+                    <td>PvP vendor.</td>
+                </tr>
+                <tr>
+                    <td><a href = "https://classic.wowhead.com/item=19389/taut-dragonhide-shoulderpads">Taut Dragonhide Shoulderpads</a></td>
+                    <td>Dropped by Chromaggus</td>
+                    <td>Raid - Blackwing Lair</td>
+                </tr>
+                <tr>
+                    <td><a href = "https://classic.wowhead.com/item=19386/elementium-threaded-cloak">Elementium Threaded Cloak</a></td>
+                    <td>Dropped by Chromaggus</td>
+                    <td>Raid - Blackwing Lair</td>
+                </tr>
+                <tr>
+                    <td><a href = "https://classic.wowhead.com/item=19405/malfurions-blessed-bulwark">Malfurion's Blessed Bulwark</a></td>
+                    <td>Dropped by Ebonroc</td>
+                    <td>Raid - Blackwing Lair</td>
+                </tr>
+                <tr>
+                    <td><a href = "https://classic.wowhead.com/item=20615/dragonspur-wraps">Dragonspur Wraps</a></td>
+                    <td>Dropped by Green Dragons</td>
+                    <td>World Boss - Green Dragons</td>
+                </tr>
+                <tr>
+                    <td><a href = "https://classic.wowhead.com/item=21672/gloves-of-enforcement">Gloves of Enforcement</a></td>
+                    <td>Dropped by Battleguard Sartura</td>
+                    <td>Raid - Ahn'Qiraj</td>
+                </tr>
+                <tr>
+                    <td><a href = "https://classic.wowhead.com/item=21586/belt-of-never-ending-agony">Belt of Never-ending Agony</a></td>
+                    <td>Dropped by C'Thun</td>
+                    <td>Raid - Ahn'Qiraj</td>
+                </tr>
+                <tr>
+                    <td><a href = "https://classic.wowhead.com/item=16552/generals-dragonhide-leggings">General's Dragonhide Leggings</a></td>
+                    <td>Rank 12 PVP</td>
+                    <td>PvP vendor</td>
+                </tr>
+                <tr>
+                    <td><a href = "https://classic.wowhead.com/item=19381/boots-of-the-shadow-flame">Boots of the Shadow Flame</a></td>
+                    <td>Dropped by Nefarian</td>
+                    <td>Raid - Blackwing Lair</td>
+                </tr>
+            </table>
             <!--200 words-->
             <p>The Feral Druid in World of Warcraft: Classic is the best class to tank during dungeons and raids. Their skill rotation is much simpler compared with Protection Warrior or Retribution Paladin as within bear form:</p>
                 <ol class="skillRotation">
@@ -37,12 +100,13 @@
                 </ol>
             <p>In terms of advantages for Feral Druid tanking in World of Warcraft: Classic has the most health points allowing higher damage to sustain and less consumables required to stay in the fight. If the raid or dungeon all dies and loose <strong><a href = "https://classic.wowhead.com/guides/classic-world-buff-consumables">world buffs</a></strong>, it allows an easier time for the party as they don’t need as much <em>healer coordination</em> to continue through. Feral Druid has the ability to acquire an aura that boost crit change by three percent, overall adding <em>110 damage per second</em> on any encounter. With an increased health pool Feral Druids can be <em>resistant to magic damage</em> from enemies, since mage damage is delt before armour calculations. The disadvantage to tanking as Feral Druid is it can’t block or parry like the Protection Warrior, <em>can’t push drink rage potions</em> for extra initial rage points and low amounts of defence allows them to be critically damaged often. </p>
         </article>
-        <article>
+        <article class = "blog-post">
             <!--a title-->
             <h3>Can't wait for Baldur's Gate 3 to be released to early access!</h3>
              <!-- Describe the image within alt --> 
             <p><img src="bg3.png" alt="Main characters in Baldur's Gate 3 video game"></p>
-            <p>Author: <span class="author">Jordan Hybki</span></p>
+            <address class="author"><a rel = "author" href="about.html">Jordan Hybki</a></address>
+            <!--<p>Author: <span class="author">Jordan Hybki</span></p> -->
             <!-- a published date -->
             <p>Published Date: <time datetime="2020-10-11 09:00">11th of October 2020, 9:00am</time></p>
             <!--200 words-->
@@ -55,7 +119,7 @@
                 <p>It is estimated that it could take a <strong>year or more</strong> for Baldur's Gate 3 to get out of early access. The story itself will captivate you as the developers iteratively update the game until its fully flushed out. The story starts off with a <a href="https://baldursgate.fandom.com/wiki/Mind_Flayer">Mind flayer</a> driving a floating ship that contains squid like ligaments <a href="https://forgottenrealms.fandom.com/wiki/Nautiloid">Nautiloid</a>. The <a href="https://forgottenrealms.fandom.com/wiki/Nautiloid">Nautiloid</a> is directed over a city, whereby city towers and defences are destroyed and you as the player, along with many other citizenries are <strong>abducted</strong> and <strong>teleported</strong> onto the ship. A portal suddenly opens, and three dragons pursue the <a href="https://baldursgate.fandom.com/wiki/Mind_Flayer">Mind flayer</a> and the <a href="https://forgottenrealms.fandom.com/wiki/Nautiloid">Nautiloid</a> out of the city. One of the <a href="https://baldursgate.fandom.com/wiki/Mind_Flayer">Mind flayers</a> onboard implants the player with a worm like creature that gives <strong>psychic cthulhu-esque powers</strong> and suddenly the hull is breached on the <a href="https://forgottenrealms.fandom.com/wiki/Nautiloid">Nautiloid</a>. The game starts from escaping the ship. The only downfall with this game is the current steep price tag of <strong>$89.95 AUD</strong>, but at this rate with the future additions it will all but worth it.</p>
         </article>
     </section>
-    
+
     <footer>
         Footer
     </footer>
