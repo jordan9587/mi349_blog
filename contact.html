@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contact - Jordan Hybki MI349 Blog</title>
 </head>
 <body>
@@ -11,10 +12,10 @@
         <h1>Jordan Hybki's Blog</h1>
         <!-- Each HTML file (index.html and about.html) should have the same navigation section (they are part of the same site)-->
         <nav>
-            <ul>
+            <ul class = "navBar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="Highlight">Contact</a></li>
             </ul>
         </nav>
     </header> 
@@ -24,25 +25,23 @@
         <form>
             <!--In contact.html, create a contact form with the following fields: Name, Email address, Reason for contact (drop down menu): saying hi, looking for a contractor, interested in an interview, Textarea for open comment and Submit button-->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Please enter name here...">
-            <br>
+            <input type="text" id="name" name="name" placeholder="Enter name here...">
+
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Please enter email address here...">
-            <br>
+            <input type="email" id="email" name="email" placeholder="Enter email address here...">
+
             <label for="reason">Reason for Contact:</label>
             <select id="reason" name="reason">
               <option value="hi">Saying hi</option>
               <option value="contractor">Looking for a contractor</option>
               <option value="interview">Interested in an interview</option>
             </select>
-            <br>
+
             <label for="comment">Open Comment:</label>
-            <br>
-            <textarea id="comment" name="comment" placeholder="Please enter comment here..." rows = "20" cols = "40"></textarea>
-            <br>
-            <br>
-            <button>Submit</button>
-            <br>
+            <textarea id="comment" name="comment" placeholder="Enter comment here..." rows = "20" cols = "40"></textarea>
+
+            <input type="button" value="Submit Button">
+
         </form>
     </section>
     <footer>

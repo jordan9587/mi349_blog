@@ -1,0 +1,159 @@
+/* Your CSS should include at least 1 type, class, ID, and attribute selector*/
+/* Type Selector */
+html { 	
+    background: #9ACD32;
+}
+
+body {
+    /* body is inheriting from html */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Add spacing from the edge of the window itself. */
+    margin: 40px;
+    /* Adds spacing inside the centre block. */
+    padding: 40px;
+    color: #242424;
+    border-top: 10px solid #242424;
+    background: #fff;
+    position: relative;
+}
+
+h1 {
+    /* padding and margin are not being inherited from body. Layout patterns and properties are not inherited.
+    While text, colour and font sizing are inherited. */
+    /* font-size: 3em;
+    margin: 0;
+    */
+
+    color: #111;
+    line-height: 1;
+    font-family: 'Helvetica Neue', sans-serif; font-size: 120px;
+    letter-spacing: -1px; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+h2 {
+    /* padding and margin are not being inherited from body. Layout patterns and properties are not inherited.
+    While text, colour and font sizing are inherited. */
+    /* font-size: 3em;
+    margin: 0;
+    */
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 72px;
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+    /* padding and margin are not being inherited from body. Layout patterns and properties are not inherited.
+    While text, colour and font sizing are inherited. */
+    /* font-size: 3em;
+    margin: 0;
+    */
+    padding: 10px;
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 19px;
+    margin: 0 0 40px;
+    text-align: left;
+}
+
+p {
+    line-height: 1.4em;
+    color: #111;     
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 14px; 
+    line-height: 24px; 
+    margin: 0 0 24px; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+}
+
+textarea {
+    width: 50%;
+    height: 120px;
+    margin: 2px 0 20px 10px;
+    border: solid 1px #9ACD32;
+}
+
+input {
+    display: block;
+    font-size: 8px;
+    border: solid 1px #9ACD32;
+    margin: 2px 0 20px 10px;
+    padding: 8px 8px;
+    width: 12%;
+}
+
+/* Class */
+.blog-post {
+    border-bottom: 1px dotted #ccc;
+}
+
+/* Base navBar class background */
+.navBar ul {
+    text-align: center;
+    padding: 0;
+    background-color: #111;
+    margin: 0;
+    list-style: none;
+}
+.navBar li {
+    font-size: 1.5em;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    line-height: 55px;
+    margin-right: 4px;
+    height: 50px;
+}
+   
+.navBar a {
+    color: #111;
+    display: block;
+    text-decoration: none;
+}
+   
+.navBar a:hover {
+    background-color: #9ACD32;
+}
+
+/* ID */
+#blog {
+    border-top: 1px dotted #111;
+}
+
+#comment, #reason {
+    display: block;
+    border: solid 1px #9ACD32;
+    margin: 2px 0 20px 10px;
+    font-size: 8px;
+    padding: 8px 8px;
+}
+
+/* Attribute */
+input[type="button"] {
+    width: 120px;
+    margin-left: 12px;
+    display: block;
+}
+
+/*
+Class selector .blog-post has more specificity than article and therefore border bottom is 
+going to be displayed with .blog-post.
+article {
+    border-bottom: 1px solid #000;
+}
+*/
