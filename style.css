@@ -1,5 +1,6 @@
 /* Your CSS should include at least 1 type, class, ID, and attribute selector*/
 /* Type Selector */
+
 html { 	
     background: #9ACD32;
 }
@@ -82,6 +83,17 @@ img {
     display: block;
     margin-left: auto;
     text-align: center;
+}
+
+@media (max-width: 400px) {
+    /* Rules applied to any browsers that are >400px wide */
+    img {
+        float: right;
+        border-radius: 50%;
+    }
+    html { 	
+        background: #3259cd;
+    }
 }
 
 textarea {
